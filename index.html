@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>La Liga Table</title>
+  <title>La Liga</title>
   <style>
-body {
+  body {
     font-family: 'Segoe UI', sans-serif;
     background: url('./assets/gfx.png') no-repeat center center fixed;
     background-size: cover;
@@ -15,29 +15,27 @@ body {
   }
 
   .header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  background: linear-gradient(to right, #ffffff, #f9f9f9);
-  padding: 10px 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #2e093d;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
 
-.header h1 {
-  font-size: 36px;
-  margin: 0;
-  color: #ff4b44; /* rojo vino */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
+  .header img {
+    width: 60px;
+    height: 60px;
+  }
 
+  .header h1 {
+    font-size: 32px;
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
 
-    .header h2 {
-      font-size: 15px;
-      margin: 0;
-      color: #ffffff;
-      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
-    }
   table {
     margin: 40px auto;
     width: 95%;
@@ -98,20 +96,20 @@ body {
     0% { background-color: #ff3b3b; }
     100% { background-color: transparent; }
   }
-  </style>
+</style>
 </head>
 <body>
 
 <div class="header">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/LaLiga_logo_2023.svg" class="logo-laliga">
-  <h1>La Liga</h1>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/LaLiga_logo_2023.svg" class="logo-laliga">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/LaLiga_logo_2023.svg" class="logo-premier">
+  <h1>Premier League</h1>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/LaLiga_logo_2023.svg" class="logo-premier">
 </div>
 
-  <table>
+<table id="tabla">
   <thead>
     <tr>
-      <th colspan="2">LEAGUE</th>
+      <th>Team</th>
       <th>P</th>
       <th>W</th>
       <th>D</th>
@@ -122,51 +120,55 @@ body {
   </thead>
   <tbody>
     <tr>
-      <td class="position">1</td>
-      <td class="team"><img src="https://crests.football-data.org/558.png" class="logo">Celta Vigo</td>
-      <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td><strong>0</strong></td>
-    </tr>
-      <td class="position">2</td>
-      <td class="team"><img src="https://crests.football-data.org/90.png" class="logo">Real Betis</td>
-      <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td><strong>0</strong></td>
-    </tr>
-      <td class="position">3</td>
-      <td class="team"><img src="https://crests.football-data.org/92.png" class="logo">Real Sociedad</td>
-      <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td><strong>0</strong></td>
-    </tr>
-      <td class="position">4</td>
-      <td class="team"><img src="https://crests.football-data.org/81.png" class="logo">Barcelona</td>
-      <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td><strong>0</strong></td>
-    </tr>
-      <td class="position">5</td>
-      <td class="team"><img src="https://crests.football-data.org/559.png" class="logo">Sevilla</td>
-      <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td><strong>0</strong></td>
-    </tr> 
-      <td class="position">6</td>
-      <td class="team"><img src="https://crests.football-data.org/86.png" class="logo">Real Madrid</td>
-      <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td><strong>0</strong></td>
+      <td><img src="https://ssl.gstatic.com/onebox/media/sports/logos/RUcTOeFcBc7q7uku1nR_iQ_64x64.png" class="logo">Alavés</td>
+      <td>1</td> <!-- P -->
+      <td>1</td> <!-- W -->
+      <td>0</td> <!-- D -->
+      <td>0</td> <!-- L -->
+      <td>0</td> <!-- GD -->
+      <td>2</td> <!-- PTS -->
     </tr>
     <tr>
-      <td class="position">7</td>
-      <td class="team"><img src="https://crests.football-data.org/95.png" class="logo">Valencia</td>
-      <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td><strong>0</strong></td>
-    </tr>
-    <tr>
-      <td class="position">8</td>
-      <td class="team"><img src="https://ssl.gstatic.com/onebox/media/sports/logos/sHiSmLm_rA0BOC5MfrNt8A_64x64.png" class="logo">Girona</td>
-      <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td><strong>0</strong></td>
-    </tr>
-    <tr>
-      <td class="position">9</td>
-      <td class="team"><img src="https://ssl.gstatic.com/onebox/media/sports/logos/i5LifmxEVIl0sbvIysiyhw_64x64.png" class="logo">Rayo Vallecano</td>
-      <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td><strong>0</strong></td>
-    </tr>
-    <tr>
-      <td class="position">10</td>
-      <td class="team"><img src="https://ssl.gstatic.com/onebox/media/sports/logos/1UDHZMdKZD15W5gus7dJyg_64x64.png" class="logo">Getafe</td>
-      <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td><strong>0</strong></td>
-    </tr>
-  </tbody>
+      <tbody>
+        <tr>
+          <td class="team"><img src="https://crests.football-data.org/558.png" class="logo">Celta Vigo</td>
+          <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td><strong>0</strong></td>
+        </tr>
+          <td class="team"><img src="https://crests.football-data.org/90.png" class="logo">Real Betis</td>
+          <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td><strong>0</strong></td>
+        </tr>
+          <td class="team"><img src="https://crests.football-data.org/92.png" class="logo">Real Sociedad</td>
+          <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td><strong>0</strong></td>
+        </tr>
+          <td class="team"><img src="https://crests.football-data.org/81.png" class="logo">Barcelona</td>
+          <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td><strong>0</strong></td>
+        </tr>
+          <td class="team"><img src="https://crests.football-data.org/559.png" class="logo">Sevilla</td>
+          <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td><strong>0</strong></td>
+        </tr> 
+          <td class="team"><img src="https://crests.football-data.org/86.png" class="logo">Real Madrid</td>
+          <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td><strong>0</strong></td>
+        </tr>
+        <tr>
+          <td class="team"><img src="https://crests.football-data.org/95.png" class="logo">Valencia</td>
+          <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td><strong>0</strong></td>
+        </tr>
+        <tr>
+          <td class="team"><img src="https://ssl.gstatic.com/onebox/media/sports/logos/sHiSmLm_rA0BOC5MfrNt8A_64x64.png" class="logo">Girona</td>
+          <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td><strong>0</strong></td>
+        </tr>
+        <tr>
+          <td class="team"><img src="https://ssl.gstatic.com/onebox/media/sports/logos/i5LifmxEVIl0sbvIysiyhw_64x64.png" class="logo">Rayo Vallecano</td>
+          <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td><strong>0</strong></td>
+        </tr>
+        <tr>
+          <td class="team"><img src="https://ssl.gstatic.com/onebox/media/sports/logos/1UDHZMdKZD15W5gus7dJyg_64x64.png" class="logo">Getafe</td>
+          <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td><strong>0</strong></td>
+        </tr>
+        <td class="team"><img src="https://ssl.gstatic.com/onebox/media/sports/logos/pEqmA7CL-VRo4Llq3rwIPA_64x64.png" class="logo">Atletico De Madrid</td>
+        <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td><strong>0</strong></td>
+      </tr>
+      </tbody>
 </table>
 
 <script>
@@ -175,8 +177,8 @@ body {
   const originalOrder = rows.map(row => row.cells[0].textContent.trim());
 
   rows.sort((a, b) => {
-    const puntosA = parseInt(a.cells[1].textContent);
-    const puntosB = parseInt(b.cells[1].textContent);
+    const puntosA = parseInt(a.cells[6].textContent);
+    const puntosB = parseInt(b.cells[6].textContent);
     return puntosB - puntosA;
   });
 
